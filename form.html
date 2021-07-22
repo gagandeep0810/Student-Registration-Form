@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Registration form </title>
+      <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+       <center> <h1> Student Registration Form</h1> </center> 
+       <hr>
+        <p><b>Fill out the form carefully for registration</b></p>
+        
+
+
+     <form class=""  action="mailto:gagandeep0177@gmail.com" onsubmit="return fun() ;" method="post" enctype="text/plain">
+        
+          <br>
+
+         
+
+             <label>Student Name:</label>
+               <br>
+               <br>
+
+
+           
+           
+           <label>First name </label>
+           <input type="text" id="a" name="First name" value="" required>
+           
+           <label>Middle name </label>
+           <input type="text" id="b" name="Middle name" value="" required>
+           <br>
+           <br>
+  
+           <label>last name </label>        
+           <input type="text" id="c" name="Last name" value="">
+
+
+          
+         
+
+          <br>
+          <br>
+          
+          
+
+         <label>Birth Date</label>
+         <input class="dob"  type="date">
+         <br> 
+         <br>
+
+         <label>Gender </label>
+          
+          <select>  
+          <option value = "Male">  Male 
+          </option>  
+          <option value = "Female">   Female
+          </option>  
+  
+          </select>  
+          <br>
+          <br>
+          <label>Address:</label>
+          <br>
+          <textarea cols="80" rows="4" value="address" id="adr"></textarea>
+          <br>
+          <br>
+          <label>City:</label>
+          <input type="text" name="city" value=""  id="jagah">
+          <br>
+          <br>
+          
+
+
+         
+          <br>
+          <button type="submit" class="registerbtn" onclick="fun();">Register</button>
+          <input type="reset" value="Reset">
+          <br>
+          
+        </form>
+          <!-- <script language="JavaScript">   
+           function result() {
+              document.getElementById("display").innerHTML = 
+                          document.getElementById("jagah").value;
+          }
+           </script>  -->
+      
+       
+          <script>              
+              function fun() {
+                var namef = document.getElementById("a").value;
+                 var namem = document.getElementById("b").value;
+                 var namel = document.getElementById("c").value;
+                 var add = document.getElementById("adr").value;
+                 var cit = document.getElementById("jagah").value;
+                
+                document.write("First Name :- ")
+                document.write( namef + "<br/>");
+                document.write("Middle Name :- ")
+                document.write(namem + "<br/>");
+                document.write("Last Name :- ")
+                document.write(namel + "<br/>");
+                document.write("Address :- ")
+                document.write(add + "<br/>");
+                document.write("city :- ")
+                document.write(cit + "<br/>");
+
+
+
+
+                   }
+
+
+          
+        
+          </script>  
+        
+
+
+
+
+
+    </body>
+</html>
